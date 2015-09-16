@@ -174,8 +174,7 @@
     <Content Include="Content\Bootstrap\bootstrap.css.map" />
     <Content Include="Content\Toastr\toastr.scss" />
     <Content Include="ConnectionStrings.config" />
-    <Content Include="AppSettingsSecrets.config" />
-    <Content Include="AppSettingsSecrets.config.sample" />
+    <None Include="AppSettingsSecrets.config" />
     <None Include="parameters.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
