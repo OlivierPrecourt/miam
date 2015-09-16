@@ -20,13 +20,15 @@ namespace Miam.AcceptanceTests.Authentification
         private MiamUser _userAdmin;
 
         [TestMethod]
-        public void authentification_admin_avec_courriel_et_mot_de_passe_valide()
+        public void un_admin_avec_courriel_et_mot_de_passe_valide()
         {
             this.Given(x => un_administrateur_existant_non_authentifé())
                 .When(x => l_administrateur_entre_son_courriel_et_mot_de_passe_valide())
                 .Then(x => l_administrateur_devrait_être_authentifié())
                 .BDDfy();
         }
+
+      
 
 
         private void un_administrateur_existant_non_authentifé()
